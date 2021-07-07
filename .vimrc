@@ -40,7 +40,4 @@ set ttyfast
 set laststatus=2
 
 " Color scheme
-set t_Co=256
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
+colorscheme slate
