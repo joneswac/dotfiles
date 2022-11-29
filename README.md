@@ -6,7 +6,7 @@ if [ -d $HOME/'dotfiles' ]; then
   git -C $HOME/dotfiles pull --ff-only --quiet
   find $HOME/dotfiles/ -maxdepth 1 -type f ! -name "README.md" -exec cp {} $HOME/ \;
 else
-  git clone https://github.com/joneswac/dotfiles $HOME/
+  git clone https://github.com/joneswac/dotfiles $HOME/dotfiles
   find $HOME/dotfiles/ -maxdepth 1 -type f ! -name "README.md" -exec cp {} $HOME/ \;
 fi
 ```
