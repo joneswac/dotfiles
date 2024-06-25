@@ -30,6 +30,9 @@ set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
 
+" Mouse
+set mouse=a
+
 " Allow hidden buffers
 set hidden
 
