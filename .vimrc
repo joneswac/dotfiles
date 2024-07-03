@@ -62,8 +62,13 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin()
-  Plug 'mrk21/yaml-vim'         " For hieradata
-  Plug 'rodjek/vim-puppet'      " For Puppet syntax highlighting
-  Plug 'vim-ruby/vim-ruby'      " For Facts, Ruby functions, and custom providers
-  Plug 'dense-analysis/ale'     " Language Server Protocol
+  Plug 'mrk21/yaml-vim'          " hieradata
+  Plug 'rodjek/vim-puppet'       " Puppet syntax highlighting
+  Plug 'vim-ruby/vim-ruby'       " Facts, Ruby functions, and custom providers
+  Plug 'dense-analysis/ale'      " Language Server Protocol
+  Plug 'preservim/nerdtree'      " File Manager
+  Plug 'vim-airline/vim-airline' " Status bar
 call plug#end()
+
+" Launch with NERDTree started
+autocmd VimEnter * NERDTree
