@@ -68,7 +68,9 @@ call plug#begin()
   Plug 'dense-analysis/ale'      " Language Server Protocol
   Plug 'preservim/nerdtree'      " File Manager
   Plug 'vim-airline/vim-airline' " Status bar
+  Plug 'w0ng/vim-hybrid'         " Color scheme
 call plug#end()
 
-" Launch with NERDTree started
-autocmd VimEnter * NERDTree
+" Set colorscheme
+set background=dark
+colorscheme hybrid
