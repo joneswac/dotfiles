@@ -8,8 +8,8 @@ syntax on
 " Show file stats
 set ruler
 
-" Blink cursor on error instead of beeping (grr)
-set visualbell
+" No stupid visual bell!
+set belloff=all
 
 " Encoding
 set encoding=utf-8
